@@ -59,7 +59,7 @@ function createBug() {
 
     const timeoutId = setTimeout(() => {
         bug.remove();
-    }, 800);
+    }, 500);
 
     bug.addEventListener("click", () => {
         bug.remove();
