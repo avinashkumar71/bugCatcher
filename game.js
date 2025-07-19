@@ -34,7 +34,7 @@ startButton.addEventListener('click',()=>{
         startButton.textContent = 'stop';
         startButton.style.backgroundColor = 'red'
         bugInterval = setInterval(createBug,1000)
-        WrongBugInterval = setInterval(createWrongBug,2000)
+        WrongBugInterval = setInterval(createWrongBug,1357)
 
     }else if(startButton.innerText==='stop'){
         clearInterval(bugInterval)
@@ -94,7 +94,7 @@ function createWrongBug(){
 
     bug.addEventListener("click", () => {
         bug.remove();
-        document.getElementById("pop-sound").play();
+        document.getElementById("wrong-sound").play();
         clearTimeout(timeoutId);
         score--;
         scoreEl.textContent = `${score}`;
