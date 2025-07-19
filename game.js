@@ -63,6 +63,7 @@ function createBug() {
 
     bug.addEventListener("click", () => {
         bug.remove();
+        document.getElementById("pop-sound").play();
         clearTimeout(timeoutId);
         score++;
         scoreEl.textContent = `${score}`;
