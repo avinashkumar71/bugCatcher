@@ -78,7 +78,7 @@ function createBug() {
 
 function createWrongBug(){
     const bug = document.createElement("span");
-    bug.textContent = "🪲";
+    bug.textContent = "🐞";
     bug.classList.add("bug");
     bug.style.color = 'red'
 
